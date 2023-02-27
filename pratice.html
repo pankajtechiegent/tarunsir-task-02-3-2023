@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="main"></p>
+    <script>
+       user = [
+   {'firstname': '','pankaj': '15','salary': 2500},
+    {'firstname': 'rohit','age': '25','salary': 3000},
+    {'firstname': 'rohan','age': '13','salary': 3500},
+   {'firstname': 'priya','age': '18','salary': 4500},
+    {'firstname': 'parchi','age': '20','salary': 5500} 
+    ]
+ console.log(user)
+ console.log("\n")
+
+
+
+console.log("Print user data using loop--") 
+
+ for(let i=0;i<=user.length-1;i++){
+   let newstr = `Hii, my name is ${user[i].firstname}, i'am ${user[i].age} year old and my salary is ₹${user[i].salary}`
+   console.log((i+1)+" "+newstr)
+}
+ console.log("\n")
+       
+// --------------------------------------------------------------------------
+//   function object & douable object function
+
+  let object ={
+    firstName:"pankaj",
+    lastName:"agrawal",
+    company : "software ",
+
+    fullname:function (){
+      let pan = `${this.firstName}  ${this.lastName}`;
+      return pan;
+    },
+
+    addComp: function (c){
+        let com = this.fullname() + `is ${this.company}`
+        return console.log(com);
+    },
+
+    
+  };
+  object.addComp();
+
+ 
+
+     
+      
+     
+
+
+        
+    </script>
+</body>
+</html>
