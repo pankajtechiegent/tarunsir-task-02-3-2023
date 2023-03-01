@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spread operator with out function
+      const Array5 =[1,2,3,4,5,6,7]
+      
+    const Array6 =["a","b","c",...Array5,10,11,12,13,14]
+
+    console.log(Array6);  
+
+    // spread operator with function
+    let number=(p1,p2,p3,p4)=>{
+        return p1+p2+p3+p4
+    }
+
+    let number4=[1,2,3,4]
+    console.log(number(...number4))
+
+    // rest operator without function
+
+       const operator=(...op) =>{
+           let mul =1
+           op.forEach((m)=>{
+            mul*=m
+           }
+
+           )
+           console.log(mul);
+
+        
+       }
+       operator(4,5,6) 
+// -----------------------------------------------------
+
+       let ArrayOfObject = [
+    {
+        Name:"rohan agrawal",
+        Age:30,
+        City:"Indore",
+        Salary:140000
+    },
+    {
+        Name:"rohit jain",
+        Age:25,
+        City:"ujjain",
+        Salary:125000
+    },
+    {
+        Name:"Pankaj Agrawaal",
+        Age:27,
+        City:"Ujjain",
+        Salary:50000
+    },
+    {
+        Name:"Aashta Pawar",
+        Age:23,
+        City:"palasiya",
+        Salary:5000
+    },
+    {
+        Name:"Prachi Patel",
+        Age:20,
+        City:"Velocity",
+        Salary:70000
+    }
+]
+
+
+let total=0
+for(let{Salary} of ArrayOfObject)
+{
+ total = total+Salary ;    
+}
+console.log(total)
+    
+                  
+
+
+
+
+
+
+
+
+
+
+
+              
+                 
+
+
+
+        
+
+        
+        
+
+
+       
+
+       
+                         
+      
+
+    
+
+
+
+   
+
+
+                                                     
+              
+
+
+   
+
+
+    
+     
+
+
+
+                                   
+
+            
+
+                                
+
+                    
+     
+
+
+
+    </script>
+</body>
+</html>
